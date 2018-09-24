@@ -47,6 +47,11 @@ key = 'color'
 if key in alien:
     del alien[key]
 ```
+## Get a list of keys
+``` python
+>>> alien.keys()
+['color', 'x_position']
+```
 # Function
 ## Functions are named blocks of code, designed to do one specific job. Information passed to a function is called an argument, and information received by a function is called a parameter.
 ``` python
