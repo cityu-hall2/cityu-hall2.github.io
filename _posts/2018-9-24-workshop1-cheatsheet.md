@@ -101,10 +101,20 @@ if 'al' not in players:
 ```
 
 # Some other syntax
+## split a string to words list
 ```python
 string='Life is short, you need Python'
 wordlist=string.split()
 
 >>> wordlist
 ['Life','is','short,','you','need','Python']
+```
+## randomly choose item in dictionary/list
+### remember add ``` import random``` in the beginning of code
+```python
+alien = {'color': 'green', 'points': 5}
+property=random.choice(alien)
+
+>>> property
+'color': 'green'
 ```
