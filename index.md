@@ -1,5 +1,5 @@
 * * *
-# Navigation
+# Our workshops
 ## [Workshop 1 WordCloud & Text generator](/workshop1)
 
 * * *
