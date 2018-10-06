@@ -28,6 +28,14 @@ for bike in bikes:
 for i in range(len(bikes)):
     print(bike[i])
 ```
+# Set
+## A structure stores unique item.
+``` python
+number={1,2,3}
+numbers.add(1)
+>>> numbers
+{1,2,3}
+```
 # Dictionary
 ## Dictionaries store connections between pieces of information. Each item in a dictionary is a key-value pair.
 ``` python
