@@ -1,0 +1,42 @@
+.selected-list .c-btn{
+    box-shadow: none !important;
+}
+.selected-list .c-list .c-token{
+    background: none !important;
+    color: $black-color !important;
+}
+.cuppa-dropdown{
+    .dropdown-list{
+        z-index: 1000 !important;
+
+        .list-area{
+            border-radius: 12px !important;
+
+            .list-filter input{
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+            }
+
+            .pure-checkbox{
+                input[type="checkbox"]:checked +
+                label:before{
+                    background: transparent !important;
+                    animation: none !important;
+                }
+                input[type="checkbox"] +
+                label:before{
+                    border: none !important;
+                }
+                input[type="checkbox"] +
+                label:after{
+                    border-color: $black-color !important;
+                }
+            }
+        }
+
+        .arrow-up{
+            margin-left: 30px !important;
+        }
+    }
+
+}

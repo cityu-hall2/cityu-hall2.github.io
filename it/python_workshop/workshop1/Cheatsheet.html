@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=60c5f7f74dc0762b0fbd8f4578323ab160766029" media="screen" type="text/css">
+    <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Python Cheatsheet | CityU Hall2 IT Team Workshop</title>
+<meta name="generator" content="Jekyll v3.7.4" />
+<meta property="og:title" content="Python Cheatsheet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Variable Print hello world to the console msg = &quot;Hello world!&quot; print(msg) List A list stores a series of items in a particular order. You access items using an index, or within a loop. bikes = [&#39;trek&#39;, &#39;redline&#39;, &#39;giant&#39;] Get the first item in a list first_bike = bikes[0] Looping through a list for bike in bikes: print(bike) or you can do for i in range(len(bikes)): print(bike[i]) Set A structure stores unique item. number={1,2,3} numbers.add(1) &gt;&gt;&gt; numbers {1,2,3} Dictionary Dictionaries store connections between pieces of information. Each item in a dictionary is a key-value pair. alien = {&#39;color&#39;: &#39;green&#39;, &#39;points&#39;: 5} Accessing a value print(&quot;The alien&#39;s color is &quot; + alien[&#39;color&#39;]) Adding a new key-value pair alien[&#39;x_position&#39;] = 0 Delete a key-value pair key = &#39;color&#39; if key in alien: del alien[key] Get a list of keys &gt;&gt;&gt; alien.keys() [&#39;color&#39;, &#39;x_position&#39;] Function Functions are named blocks of code, designed to do one specific job. Information passed to a function is called an argument, and information received by a function is called a parameter. ``` python def greet_user(): “&quot;”Display a simple greeting.””” print(“Hello!”)" />
+<meta property="og:description" content="Variable Print hello world to the console msg = &quot;Hello world!&quot; print(msg) List A list stores a series of items in a particular order. You access items using an index, or within a loop. bikes = [&#39;trek&#39;, &#39;redline&#39;, &#39;giant&#39;] Get the first item in a list first_bike = bikes[0] Looping through a list for bike in bikes: print(bike) or you can do for i in range(len(bikes)): print(bike[i]) Set A structure stores unique item. number={1,2,3} numbers.add(1) &gt;&gt;&gt; numbers {1,2,3} Dictionary Dictionaries store connections between pieces of information. Each item in a dictionary is a key-value pair. alien = {&#39;color&#39;: &#39;green&#39;, &#39;points&#39;: 5} Accessing a value print(&quot;The alien&#39;s color is &quot; + alien[&#39;color&#39;]) Adding a new key-value pair alien[&#39;x_position&#39;] = 0 Delete a key-value pair key = &#39;color&#39; if key in alien: del alien[key] Get a list of keys &gt;&gt;&gt; alien.keys() [&#39;color&#39;, &#39;x_position&#39;] Function Functions are named blocks of code, designed to do one specific job. Information passed to a function is called an argument, and information received by a function is called a parameter. ``` python def greet_user(): “&quot;”Display a simple greeting.””” print(“Hello!”)" />
+<link rel="canonical" href="http://localhost:4000/workshop1/Cheatsheet" />
+<meta property="og:url" content="http://localhost:4000/workshop1/Cheatsheet" />
+<meta property="og:site_name" content="CityU Hall2 IT Team Workshop" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-24T00:00:00+08:00" />
+<script type="application/ld+json">
+{"description":"Variable Print hello world to the console msg = &quot;Hello world!&quot; print(msg) List A list stores a series of items in a particular order. You access items using an index, or within a loop. bikes = [&#39;trek&#39;, &#39;redline&#39;, &#39;giant&#39;] Get the first item in a list first_bike = bikes[0] Looping through a list for bike in bikes: print(bike) or you can do for i in range(len(bikes)): print(bike[i]) Set A structure stores unique item. number={1,2,3} numbers.add(1) &gt;&gt;&gt; numbers {1,2,3} Dictionary Dictionaries store connections between pieces of information. Each item in a dictionary is a key-value pair. alien = {&#39;color&#39;: &#39;green&#39;, &#39;points&#39;: 5} Accessing a value print(&quot;The alien&#39;s color is &quot; + alien[&#39;color&#39;]) Adding a new key-value pair alien[&#39;x_position&#39;] = 0 Delete a key-value pair key = &#39;color&#39; if key in alien: del alien[key] Get a list of keys &gt;&gt;&gt; alien.keys() [&#39;color&#39;, &#39;x_position&#39;] Function Functions are named blocks of code, designed to do one specific job. Information passed to a function is called an argument, and information received by a function is called a parameter. ``` python def greet_user(): “&quot;”Display a simple greeting.””” print(“Hello!”)","@type":"BlogPosting","url":"http://localhost:4000/workshop1/Cheatsheet","headline":"Python Cheatsheet","dateModified":"2018-09-24T00:00:00+08:00","datePublished":"2018-09-24T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/workshop1/Cheatsheet"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <a href="http://localhost:4000/">
+          <h1>CityU Hall2 IT Team Workshop</h1>
+        </a>
+        <h2></h2>
+        <a href="https://github.com/cityu-hall2/2018PythonWorkshop" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1 id="variable">Variable</h1>
+<h2 id="print-hello-world-to-the-console">Print hello world to the console</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">msg</span> <span class="o">=</span> <span class="s">"Hello world!"</span> 
+<span class="k">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</code></pre></div></div>
+<h1 id="list">List</h1>
+<h2 id="a-list-stores-a-series-of-items-in-a-particular-order-you-access-items-using-an-index-or-within-a-loop">A list stores a series of items in a particular order. You access items using an index, or within a loop.</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">bikes</span> <span class="o">=</span> <span class="p">[</span><span class="s">'trek'</span><span class="p">,</span> <span class="s">'redline'</span><span class="p">,</span> <span class="s">'giant'</span><span class="p">]</span>
+</code></pre></div></div>
+<h2 id="get-the-first-item-in-a-list">Get the first item in a list</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">first_bike</span> <span class="o">=</span> <span class="n">bikes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+<h2 id="looping-through-a-list">Looping through a list</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">bike</span> <span class="ow">in</span> <span class="n">bikes</span><span class="p">:</span> 
+    <span class="k">print</span><span class="p">(</span><span class="n">bike</span><span class="p">)</span>
+</code></pre></div></div>
+<p><strong>or you can do</strong></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">bikes</span><span class="p">)):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">bike</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</code></pre></div></div>
+<h1 id="set">Set</h1>
+<h2 id="a-structure-stores-unique-item">A structure stores unique item.</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">number</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span>
+<span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+</code></pre></div></div>
+<h1 id="dictionary">Dictionary</h1>
+<h2 id="dictionaries-store-connections-between-pieces-of-information-each-item-in-a-dictionary-is-a-key-value-pair">Dictionaries store connections between pieces of information. Each item in a dictionary is a key-value pair.</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">alien</span> <span class="o">=</span> <span class="p">{</span><span class="s">'color'</span><span class="p">:</span> <span class="s">'green'</span><span class="p">,</span> <span class="s">'points'</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
+</code></pre></div></div>
+<h2 id="accessing-a-value">Accessing a value</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"The alien's color is "</span> <span class="o">+</span> <span class="n">alien</span><span class="p">[</span><span class="s">'color'</span><span class="p">])</span>
+</code></pre></div></div>
+<h2 id="adding-a-new-key-value-pair">Adding a new key-value pair</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">alien</span><span class="p">[</span><span class="s">'x_position'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div></div>
+<h2 id="delete-a-key-value-pair">Delete a key-value pair</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">key</span> <span class="o">=</span> <span class="s">'color'</span>
+<span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">alien</span><span class="p">:</span>
+    <span class="k">del</span> <span class="n">alien</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+</code></pre></div></div>
+<h2 id="get-a-list-of-keys">Get a list of keys</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">alien</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="p">[</span><span class="s">'color'</span><span class="p">,</span> <span class="s">'x_position'</span><span class="p">]</span>
+</code></pre></div></div>
+<h1 id="function">Function</h1>
+<h2 id="functions-are-named-blocks-of-code-designed-to-do-one-specific-job-information-passed-to-a-function-is-called-an-argument-and-information-received-by-a-function-is-called-a-parameter">Functions are named blocks of code, designed to do one specific job. Information passed to a function is called an argument, and information received by a function is called a parameter.</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">greet_user</span><span class="p">():</span> 
+    <span class="s">"""Display a simple greeting."""</span> 
+    <span class="k">print</span><span class="p">(</span><span class="s">"Hello!"</span><span class="p">)</span> 
+
+<span class="n">greet_user</span><span class="p">()</span>
+</code></pre></div></div>
+<h2 id="passing-an-argument">Passing an argument</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">greet_user</span><span class="p">(</span><span class="n">username</span><span class="p">):</span> 
+    <span class="s">"""Display a personalized greeting."""</span> 
+    <span class="k">print</span><span class="p">(</span><span class="s">"Hello, "</span> <span class="o">+</span> <span class="n">username</span> <span class="o">+</span> <span class="s">"!"</span><span class="p">)</span> 
+
+<span class="n">greet_user</span><span class="p">(</span><span class="s">'jesse'</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="returning-a-value">Returning a value</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">add_numbers</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span> 
+    <span class="s">"""Add two numbers and return the sum."""</span> 
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> 
+
+<span class="nb">sum</span> <span class="o">=</span> <span class="n">add_numbers</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> 
+<span class="k">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</code></pre></div></div>
+<h1 id="working-with-files">Working with files</h1>
+<h2 id="your-programs-can-read-from-files-and-write-to-files">Your programs can read from files and write to files.</h2>
+<h2 id="reading-a-file-and-storing-it">Reading a file and storing it</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">'hello.txt'</span> <span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> 
+    <span class="n">content</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div></div>
+<h1 id="if-statement">If statement</h1>
+<h2 id="if-statements-allow-you-to-examine-the-current-state-of-a-program-and-respond-appropriately-to-that-state-you-can-write-a-simple-if-statement-that-checks-one-condition-or-you-can-create-a-complex-series-of-if-statements-that-idenitfy-the-exact-conditions-youre-looking-for">If statements allow you to examine the current state of a program and respond appropriately to that state. You can write a simple if statement that checks one condition, or you can create a complex series of if statements that idenitfy the exact conditions you’re looking for.</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">age</span> <span class="o">=</span> <span class="mi">17</span> 
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span> 
+    <span class="k">print</span><span class="p">(</span><span class="s">"You're old enough to vote!"</span><span class="p">)</span> 
+<span class="k">else</span><span class="p">:</span> 
+    <span class="k">print</span><span class="p">(</span><span class="s">"You can't vote yet."</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="testing-if-a-value-is-in-a-list">Testing if a value is in a list</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">players</span> <span class="o">=</span> <span class="p">[</span><span class="s">'al'</span><span class="p">,</span> <span class="s">'bea'</span><span class="p">,</span> <span class="s">'cyn'</span><span class="p">,</span> <span class="s">'dale'</span><span class="p">]</span> 
+<span class="k">if</span> <span class="s">'al'</span> <span class="ow">in</span> <span class="n">players</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"al in players!"</span><span class="p">)</span>  
+
+<span class="k">if</span> <span class="s">'al'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">players</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"al not in players!"</span><span class="p">)</span>      
+</code></pre></div></div>
+
+<h1 id="some-other-syntax">Some other syntax</h1>
+<h2 id="split-a-string-to-words-list">split a string to words list</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">string</span><span class="o">=</span><span class="s">'Life is short, you need Python'</span>
+<span class="n">wordlist</span><span class="o">=</span><span class="n">string</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">wordlist</span>
+<span class="p">[</span><span class="s">'Life'</span><span class="p">,</span><span class="s">'is'</span><span class="p">,</span><span class="s">'short,'</span><span class="p">,</span><span class="s">'you'</span><span class="p">,</span><span class="s">'need'</span><span class="p">,</span><span class="s">'Python'</span><span class="p">]</span>
+</code></pre></div></div>
+<h2 id="randomly-choose-item-in-dictionarylist">randomly choose item in dictionary/list</h2>
+<h3 id="remember-add-import-random-in-the-beginning-of-code">remember add <code class="highlighter-rouge">import random</code> in the beginning of code</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">alien</span> <span class="o">=</span> <span class="p">{</span><span class="s">'color'</span><span class="p">:</span> <span class="s">'green'</span><span class="p">,</span> <span class="s">'points'</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
+<span class="nb">property</span><span class="o">=</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">alien</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">property</span>
+<span class="s">'color'</span><span class="p">:</span> <span class="s">'green'</span>
+</code></pre></div></div>
+
+        </section>
+
+        <aside id="sidebar">
+          
+
+          
+            <p class="repo-owner"><a href="http://github.com/cityu-hall2/2018PythonWorkshop">2018PythonWorkshop</a> is maintained by <a href="http://github.com/cityu-hall2">cityu-hall2</a>.</p>
+          
+
+        </aside>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
