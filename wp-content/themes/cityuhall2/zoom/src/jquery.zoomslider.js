@@ -1,7 +1,7 @@
 /*
  *  zoomSlider - v0.2.3
  *  CSS3 background zoom slideshow
- *  http://mingthings.com
+ *  https://mingthings.com
  *
  *  Made by Ming Yeung
  *  Under MIT License

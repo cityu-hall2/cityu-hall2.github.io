@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-	xmlns:content="http://purl.org/rss/1.0/modules/content/"
-	xmlns:dc="http://purl.org/dc/elements/1.1/"
-	xmlns:atom="http://www.w3.org/2005/Atom"
-	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:content="https://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="https://purl.org/dc/elements/1.1/"
+	xmlns:atom="https://www.w3.org/2005/Atom"
+	xmlns:sy="https://purl.org/rss/1.0/modules/syndication/"
 	
 	>
 <channel>
 	<title>Comments on: News</title>
-	<atom:link href="http://www.cityuhall2.org/news/feed/" rel="self" type="application/rss+xml" />
-	<link>http://www.cityuhall2.org</link>
+	<atom:link href="https://www.cityuhall2.org/news/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.cityuhall2.org</link>
 	<description>Hall 2</description>
 	<lastBuildDate>Tue, 09 Jun 2015 12:06:57 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>

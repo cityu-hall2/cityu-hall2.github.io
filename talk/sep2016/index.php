@@ -1,3 +1,3 @@
 <?php 
-header("Location: http://goo.gl/cx3gm8");
+header("Location: https://goo.gl/cx3gm8");
 ?>
