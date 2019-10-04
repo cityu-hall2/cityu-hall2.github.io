@@ -243,7 +243,7 @@ body {
   position: relative;
   text-align: center;
   overflow: hidden;
-  background-image: url("../images/bg.jpg");
+  background-color: #000;
 
 }
 .gallery-image .inner {
