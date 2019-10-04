@@ -95,8 +95,22 @@ a {
   box-sizing:content-box
   align-items:flex-start;
   transition-property:transform,height;
-  touch-action:pan-x
+  touch-action:pan-y;
 }
+
+.swaper{
+  position:relative;
+  width:100%;
+  height:75vh;
+  z-index:1;
+  display:flex;
+  transition-property:transform;
+  box-sizing:content-box
+  align-items:flex-start;
+  transition-property:transform,height;
+  touch-action:pan-y;
+}
+
 .swiper-slide,.swiper-wrapper{
   transform:translate3d(0,0,0)
 }
