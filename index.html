@@ -130,9 +130,8 @@ var ftsAjax = {"ajaxurl":"https:\/\/www.cityuhall2.org\/wp-admin\/admin-ajax.php
 		<style>
 			/* The Modal (background) */
 			.modal {
-			  display: none; /* Hidden by default */
+			  display:none;/* Hidden by default */
 			  position: fixed; /* Stay in place */
-			  z-index: 10; /* Sit on top */
 			  padding-top: 100px; /* Location of the box */
 			  left: 0;
 			  top: 0;
@@ -141,8 +140,8 @@ var ftsAjax = {"ajaxurl":"https:\/\/www.cityuhall2.org\/wp-admin\/admin-ajax.php
 			  overflow: auto; /* Enable scroll if needed */
 			  background-color: rgb(0,0,0); /* Fallback color */
 			  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        z-index: 100;
 			}
-
 			/* Modal Content */
 			.modal-content {
 			  background-color: #2a2a2a;
@@ -152,20 +151,22 @@ var ftsAjax = {"ajaxurl":"https:\/\/www.cityuhall2.org\/wp-admin\/admin-ajax.php
 			  margin: auto;
 			  border: 1px solid #888;
 			  width: 60.9%;
-			  height: 60vh;
+			  height: 62vh;
 			}
-			.modal p{
+			.modal a p{
 			  display: inline-block;
 			  z-index: 30;
+        color: white;
+        text-decoration: none;
+        margin-right: 2em;
 			}
-
 			.modal span {
 			  font-weight: bolder;
 			  font-size: 1.2em;
 			  padding-right: 2em;
 			  color: #FFA500;
+        text-decoration: none;
 			}
-
 			.button {
 			  background-color: #FFA500;
 			  border: none;
@@ -180,7 +181,7 @@ var ftsAjax = {"ajaxurl":"https:\/\/www.cityuhall2.org\/wp-admin\/admin-ajax.php
 			  text-decoration: none;
 				color: #FFF;
 			}
-			
+
 			.button1 {
 				background-color: #FF9900;
 			  border: none;
@@ -194,13 +195,28 @@ var ftsAjax = {"ajaxurl":"https:\/\/www.cityuhall2.org\/wp-admin\/admin-ajax.php
 			  text-decoration: none;
 				color: #FFF;
 			}
-
 			.button:hover {
 				opacity: 1
 				background-color: #FF9900;
 				color:white;
 			}
-			</style>
+		 /* The Close Button */
+			.close {
+			  color: #aaaaaa;
+			  float: right;
+			  font-size: 28px;
+			  font-weight: bold;
+			  z-index:40;
+			  display:inline-block;
+			}
+
+			.close:hover,
+			.close:focus {
+			  color: #000;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+		</style>
 	
 </head>
 
@@ -263,18 +279,18 @@ var ftsAjax = {"ajaxurl":"https:\/\/www.cityuhall2.org\/wp-admin\/admin-ajax.php
 	<div class="fullwidth2">
 		
 		<!-- For AWSome Day -->
-		  <a href="AWSomeDay/AWS.html">
 		  <div id="myModal" class="modal">
 
 		    <!-- Modal content -->
 		    <div class="modal-content">
-		      <img src="banner.jpg" alt="">
-		      <p><span>Nov 29.</span>AWSome Day at CityU</p>
-		      <button type="button" name="more" class="button">More>></button>
+        	  <span class="close">&times;</span>
+          		<a href="AWSomeDay/AWS.html">
+		          <img src="banner.jpg" alt="">
+		            <p><span>Nov 29.</span>AWSome Day at CityU</p>
+		              <button type="button" name="more" class="button1">More>></button>
+          		</a>
 		    </div>
-
 		  </div>
-		  </a>
 
             				
 <article id="post-116" class="post-116 page type-page status-publish hentry">
@@ -377,11 +393,15 @@ var um_scripts = {"ajaxurl":"https:\/\/www.cityuhall2.org\/wp-admin\/admin-ajax.
 		  <script>
 		  // Get the modal
 		  var modal = document.getElementById("myModal");
-
+      var span = document.getElementsByClassName("close")[0];
 		  // When the user clicks the button, open the modal
 		  window.onload = function() {
 		    modal.style.display = "block";
 		  }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
 		  // When the user clicks anywhere outside of the modal, close it
 		  window.onclick = function(event) {
 		    if (event.target == modal) {
