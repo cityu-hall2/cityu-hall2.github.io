@@ -159,7 +159,7 @@ p.lead {
 
 }
 footer .site-logo {
-  margin-left: 8em;
+  margin-left: 5em;
   margin-bottom: 2em;
   display: block;
 
@@ -169,18 +169,17 @@ footer .site-logo {
 }
 
 .footer img {
-  height: 100px;
-
-    float: left;
+  height: 80px;
+  float: left;
 }
 .boxL {
   display: block;
   float: left;
-  margin-left: 5em;
+  margin-left: 2em;
 }
 
 .boxR {
-  margin-left: 12em;
+  margin-left: 10em;
   display: inline-block;
 }
 .boxR li {
@@ -944,6 +943,9 @@ input[type="button"].btn--primary {
   border-color: #f2f2f2;
   color: #FFFFFF;
 }
+.btn .btn1 {
+  background-color: #FF9900;
+}
 
 .btn.btn--primary:hover,
 button.btn--primary:hover,
@@ -978,6 +980,7 @@ button.btn--medium {
 button.btn--large {
   height: 6rem !important;
   line-height: 5.6rem !important;
+  background-color: #FF9900;
 }
 
 .btn--stroke,
@@ -1643,6 +1646,9 @@ body.menu-is-open {
   padding: 0;
   outline: 0;
   border: none;
+}
+.header-logo span img {
+  width: 200px;
 }
 
 .header-logo img {
@@ -2639,6 +2645,7 @@ html.no-csstransitions .home-content__main {
 
   .home-content__button {
     margin-top: 4.8rem;
+    z-index:30;
   }
 
   .home-content__button .btn {
