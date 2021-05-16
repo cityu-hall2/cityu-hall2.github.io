@@ -5,7 +5,7 @@ Author: yaminncco
 Colors:
 	Body 		  : #444
 	Headers 	: #0b0f28
-	Primary 	: #dd0a37
+	Primary 	: #FF9900
 	Dark 		  : #000
 	Grey 		  : #F9F9FA #DADADA
 
@@ -78,7 +78,7 @@ a {
 a:hover, a:focus {
   text-decoration: none;
   outline: none;
-  color: #dd0a37;
+  color: #FF9900;
 }
 
 ul, ol {
@@ -120,7 +120,7 @@ textarea.input {
 }
 
 .input:focus {
-  border-color: #dd0a37;
+  border-color: #FF9900;
 }
 
 /*----------------------------*\
@@ -287,16 +287,16 @@ textarea.input {
   bottom: -3px;
   width: 100%;
   left: 0;
-  background: #dd0a37;
+  background: #FF9900;
 }
 
 .main-nav li a:hover, .main-nav li a:focus {
   background-color: transparent;
-  color: #dd0a37;
+  color: #FF9900;
 }
 
 #header.transparent-navbar .main-nav li a:hover {
-  color: #dd0a37;
+  color: #FF9900;
 }
 
 .navbar-toggle {
@@ -340,7 +340,7 @@ textarea.input {
     color: #0b0f28;
   }
   .main-nav li a:hover, .main-nav li a:focus, .main-nav li.active a {
-    background-color: #dd0a37;
+    background-color: #FF9900;
     color: #fff !important;
   }
   .navbar-toggle {
@@ -401,7 +401,7 @@ textarea.input {
 .number h3 {
   font-size: 42px;
   margin-bottom: 0px;
-  color: #dd0a37;
+  color: #FF9900;
 }
 
 .number p {
@@ -451,7 +451,7 @@ textarea.input {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: transparent;
-  color: #dd0a37;
+  color: #FF9900;
   width: 90px;
   height: 90px;
   line-height: 90px;
@@ -809,7 +809,7 @@ textarea.input {
 }
 
 .contact h3 {
-  color: #dd0a37;
+  color: #FF9900;
 }
 
 #map {
@@ -841,7 +841,7 @@ textarea.input {
   text-align: center;
   line-height: 120px;
   font-size: 42px;
-  color: #dd0a37;
+  color: #FF9900;
   cursor: pointer;
 }
 
@@ -878,7 +878,7 @@ textarea.input {
   height: 30px;
   text-align: center;
   border-radius: 50%;
-  background: #dd0a37;
+  background: #FF9900;
   color: #fff;
   line-height: 30px;
   margin-right: 15px;
@@ -943,7 +943,7 @@ textarea.input {
 .blog .blog-content .read-more {
   display: inline-block;
   padding: 7px 14px;
-  background: #dd0a37;
+  background: #FF9900;
   color: #FFF;
   text-transform: uppercase;
   border-radius: 2px;
@@ -976,7 +976,7 @@ textarea.input {
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-color: #dd0a37;
+  background-color: #FF9900;
   color: #FFF;
   border-radius: 50%;
   line-height: 30px;
@@ -1016,7 +1016,7 @@ textarea.input {
 
 .blog .blog-comments .media .media-heading .reply-btn {
   margin-left: 10px;
-  color: #dd0a37;
+  color: #FF9900;
 }
 
 .blog .blog-reply {
