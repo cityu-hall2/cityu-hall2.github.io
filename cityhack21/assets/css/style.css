@@ -90,7 +90,7 @@ ul, ol {
 .main-btn {
   display: inline-block;
   padding: 14px 50px;
-  background: #dd0a37;
+  background: #FF9900;
   color: #FFF;
   text-transform: uppercase;
   border: none;
@@ -153,6 +153,7 @@ textarea.input {
   font-weight: 900;
   font-size: 42px;
   overflow: hidden;
+  padding-bottom: 5px;
 }
 
 .section-title .title>span {
@@ -505,20 +506,20 @@ textarea.input {
 
 .speaker .speaker-body {
   position: absolute;
-  bottom: 60px;
+  bottom: 0px;
   left: 0;
   right: 0;
 }
 
 .speaker .speaker-content {
   position: relative;
-  padding: 30px;
-  background: #dd0a37;
-  text-align: right;
+  padding: 20px;
+  background: #FF9900;
+  text-align: center;
   z-index: 20;
 }
 
-.speaker .speaker-content>h2 {
+.speaker .speaker-content>h3 {
   color: #FFF;
 }
 
@@ -545,7 +546,7 @@ textarea.input {
   line-height: 40px;
   text-align: center;
   color: #FFF;
-  background: #dd0a37;
+  background: #FF9900;
   z-index: 15;
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
@@ -592,7 +593,7 @@ textarea.input {
   height: 60px;
   line-height: 60px;
   text-align: center;
-  background-color: #dd0a37 !important;
+  background-color: #FF9900 !important;
   border-radius: 50%;
   padding: 0;
   color: #FFF;
@@ -620,7 +621,7 @@ textarea.input {
 }
 
 .speaker-modal .speaker-modal-content .speaker-job {
-  color: #dd0a37;
+  color: #FF9900;
 }
 
 .speaker-modal .speaker-modal-content .speaker-social {
@@ -636,7 +637,7 @@ textarea.input {
   text-align: center;
   font-size: 14px;
   border-radius: 50%;
-  background: #dd0a37;
+  background: #FF9900;
   color: #fff;
   margin-right: 5px;
   -webkit-transition: 0.3s opacity;
@@ -662,7 +663,7 @@ textarea.input {
 }
 
 .speaker-modal .speaker-modal-content .speaker-events .speaker-event>span strong {
-  color: #dd0a37;
+  color: #FF9900;
 }
 
 /*=========================================================
@@ -684,7 +685,7 @@ textarea.input {
   top: 0px;
   bottom: 0px;
   width: 4px;
-  background-color: #dd0a37;
+  background-color: #FF9900;
 }
 
 .event:last-child:after {
@@ -698,7 +699,7 @@ textarea.input {
   height: 60px;
   top: -60px;
   width: 4px;
-  background-color: #dd0a37;
+  background-color: #FF9900;
 }
 
 .event .event-day {
@@ -708,7 +709,7 @@ textarea.input {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background: #dd0a37;
+  background: #FF9900;
   z-index: 10;
 }
 
@@ -719,7 +720,7 @@ textarea.input {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: #dd0a37;
+  background: #FF9900;
   z-index: 10;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -762,11 +763,11 @@ textarea.input {
 }
 
 .event .event-time i {
-  color: #dd0a37;
+  color: #FF9900;
 }
 
 .event .event-content a {
-  color: #dd0a37;
+  color: #FF9900;
 }
 
 .download-btn {
