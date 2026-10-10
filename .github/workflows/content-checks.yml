@@ -27,13 +27,13 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       PR: ${{ github.event.pull_request.number || inputs.pr }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
 
       # A pull request is checked out as a merge commit: HEAD^1 is the target branch and
       # HEAD^2 is the PR itself. A re-check started by the bot runs on the PR branch.
