@@ -1,0 +1,36 @@
+name: Content check word list
+
+# When someone ticks a word in the content check's PR comment, add it to words.txt on
+# that PR's branch and re-run the check.
+on:
+  issue_comment:
+    types: [edited]
+
+permissions:
+  actions: write
+  contents: write
+  issues: write
+  pull-requests: read
+
+jobs:
+  add-ticked-words:
+    name: Add ticked words
+    if: >-
+      github.event.issue.pull_request &&
+      github.event.comment.user.login == 'github-actions[bot]' &&
+      contains(github.event.comment.body, '<!-- content-check-bot -->') &&
+      github.event.sender.type != 'Bot'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: content-check-words-${{ github.event.issue.number }}
+    steps:
+      # Comment events always run master's copy of this workflow and the bot script,
+      # never code from the pull request.
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout: .github/content-checks
+
+      - name: Add ticked words to the word list
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/content-checks/github_bot.py add-words

@@ -1,0 +1,9 @@
+{
+  "version": "0.2",
+  "language": "en,en-GB",
+  "dictionaryDefinitions": [
+    { "name": "site-words", "path": "./words.txt", "addWords": true }
+  ],
+  "dictionaries": ["site-words"],
+  "ignoreRegExpList": ["Urls", "Email"]
+}

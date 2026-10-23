@@ -1,0 +1,62 @@
+name: Content checks
+
+on:
+  pull_request:
+    branches: [master]
+  # Used by content-check-words.yml to re-check a PR after adding ticked words.
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: Number of the pull request to re-check
+        required: true
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: content-checks-${{ github.event.pull_request.number || inputs.pr }}
+  cancel-in-progress: true
+
+jobs:
+  spelling-and-dates:
+    name: Spelling and dates
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PR: ${{ github.event.pull_request.number || inputs.pr }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      # A pull request is checked out as a merge commit: HEAD^1 is the target branch and
+      # HEAD^2 is the PR itself. A re-check started by the bot runs on the PR branch.
+      - name: Work out what to compare
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            echo "BASE=HEAD^1" >> "$GITHUB_ENV"
+            echo "HEAD_REF=HEAD^2" >> "$GITHUB_ENV"
+          else
+            echo "BASE=origin/$(gh pr view "$PR" --json baseRefName --jq .baseRefName)" >> "$GITHUB_ENV"
+            echo "HEAD_REF=HEAD" >> "$GITHUB_ENV"
+          fi
+
+      - name: Check spelling and dates in changed lines
+        id: check
+        continue-on-error: true
+        run: python3 .github/content-checks/check_content.py --base "$BASE" --head "$HEAD_REF" --json report.json
+
+      # PRs from forks get a read-only token, so they only get the ❌ and the annotations.
+      - name: Comment on the pull request
+        if: always() && (github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository)
+        run: python3 .github/content-checks/github_bot.py report --pr "$PR" --report report.json
+
+      - name: Fail if problems were found
+        if: steps.check.outcome == 'failure'
+        run: exit 1
