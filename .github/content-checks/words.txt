@@ -32,6 +32,7 @@ Cofounder
 Colorlib
 cout
 CPPCC
+CSCW
 CUHK
 CUPP
 Cyberport
@@ -73,6 +74,7 @@ Insur
 Insurtech
 ISLA
 Karena
+Kenix
 Keung
 Khongorzul
 Kinni
@@ -153,4 +155,5 @@ Yewon
 Ying
 Yuang
 Yuen
+ZENG
 Zhixue
